@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Voting System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the E-Voting System</h1>
+    </header>
+    <section id="welcome">
+        <h2>Welcome to the Voting Portal</h2>
+        <button id="loginBtn">Login</button>
+        <button id="signupBtn">Sign Up</button>
+    </section>
+
+    <!-- Login Form -->
+    <section id="login" style="display: none;">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="loginUsername">Username</label>
+            <input type="text" id="loginUsername" required>
+            <label for="loginPassword">Password</label>
+            <input type="password" id="loginPassword" required>
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+    <!-- Signup Form -->
+    <section id="signup" style="display: none;">
+        <h2>Sign Up</h2>
+        <form id="signupForm">
+            <label for="name">Name</label>
+            <input type="text" id="name" required>
+            <label for="aadharId">Aadhar ID</label>
+            <input type="text" id="aadharId" required>
+            <label for="signupUsername">Username</label>
+            <input type="text" id="signupUsername" required>
+            <label for="signupPassword">Password</label>
+            <input type="password" id="signupPassword" required>
+            <button type="submit">Sign Up</button>
+        </form>
+    </section>
+
+    <!-- Voting Page -->
+    <section id="voting" style="display: none;">
+        <h2>Vote for Your Candidate</h2>
+        <div id="candidatesContainer"></div>
+        <section id="thankYou" style="display: none;">
+            <h2>Thank You for Voting!</h2>
+        </section>
+    </section>
+
+    <!-- Candidate Details Page -->
+    <section id="candidateDetails" style="display: none;">
+        <h2>Candidate Details</h2>
+        <div id="candidateInfo"></div>
+        <button id="backToVoting">Back to Voting</button>
+    </section>
+
+    <!-- Admin Section -->
+    <section id="adminSection" style="display: none;">
+        <h2>Admin Login</h2>
+        <form id="adminLoginForm">
+            <label for="adminUsername">Admin Username</label>
+            <input type="text" id="adminUsername" required>
+            <label for="adminPassword">Admin Password</label>
+            <input type="password" id="adminPassword" required>
+            <button type="submit">Login</button>
+        </form>
+        <section id="votesContainer" style="margin-top: 1rem;"></section>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Voting System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Existing content here -->
+
+    <!-- Admin Login Form -->
+    <div id="adminLogin" style="display: none;">
+        <h2>Admin Login</h2>
+        <form id="adminLoginForm">
+            <label for="adminUsername">Username:</label>
+            <input type="text" id="adminUsername" required>
+            <label for="adminPassword">Password:</label>
+            <input type="password" id="adminPassword" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <!-- Admin Section -->
+    <div id="adminSection" style="display: none;">
+        <h2>Admin Dashboard</h2>
+        <button id="manageVotersBtn">Manage Voters</button>
+        <button id="manageCandidatesBtn">Manage Candidates</button>
+        <button id="viewVotesBtn">View Votes</button>
+
+        <!-- Manage Voters -->
+        <div id="manageVoters" style="display: none;">
+            <h3>Manage Voters</h3>
+            <form id="addVoterForm">
+                <label for="voterName">Name:</label>
+                <input type="text" id="voterName" required>
+                <label for="voterUsername">Username:</label>
+                <input type="text" id="voterUsername" required>
+                <label for="voterPassword">Password:</label>
+                <input type="password" id="voterPassword" required>
+                <button type="submit">Add Voter</button>
+            </form>
+            <h4>Voter List:</h4>
+            <ul id="voterList"></ul>
+        </div>
+
+        <!-- Manage Candidates -->
+        <div id="manageCandidates" style="display: none;">
+            <h3>Manage Candidates</h3>
+            <form id="addCandidateForm">
+                <label for="candidateName">Name:</label>
+                <input type="text" id="candidateName" required>
+                <label for="candidatePhoto">Photo URL:</label>
+                <input type="text" id="candidatePhoto" required>
+                <label for="candidateParty">Party:</label>
+                <input type="text" id="candidateParty" required>
+                <label for="candidateDetails">Details:</label>
+                <textarea id="candidateDetails" required></textarea>
+                <button type="submit">Add Candidate</button>
+            </form>
+            <h4>Candidate List:</h4>
+            <ul id="candidateList"></ul>
+        </div>
+
+        <!-- View Votes -->
+        <div id="viewVotes" style="display: none;">
+            <h3>View Votes</h3>
+            <div id="votesContainer"></div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
