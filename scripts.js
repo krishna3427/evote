@@ -3,7 +3,7 @@ let users = [];
 const candidates = [
     {
         name: 'YS Jagan Mohan Reddy',
-        photo: 'images/ys_jagan.jpg',
+        photo: 'https://github.com/krishna3427/evote/blob/98a88029b8358c96379dbf13435e0f1db1f63427/ys_jagan.jpg',
         party: 'Yuvajana Sramika Rythu Congress Party (YSRCP)',
         details: 'Member of Legislative Assembly Andhra Pradesh. Incumbent Chief Minister since 19 June 2014.'
     },
