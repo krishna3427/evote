@@ -3,23 +3,24 @@ let users = [];
 const candidates = [
     {
         name: 'YS Jagan Mohan Reddy',
-        photo: 'https://github.com/krishna3427/evote/blob/98a88029b8358c96379dbf13435e0f1db1f63427/ys_jagan.jpg',
+        photo: 'https://github.com/krishna3427/evote/blob/98a88029b8358c96379dbf13435e0f1db1f63427/ys_jagan.jpg?raw=true',
         party: 'Yuvajana Sramika Rythu Congress Party (YSRCP)',
         details: 'Member of Legislative Assembly Andhra Pradesh. Incumbent Chief Minister since 19 June 2014.'
     },
     {
         name: 'N. Chandrababu Naidu',
-        photo: 'images/chandrababu_naidu.jpg',
+        photo: 'https://github.com/krishna3427/evote/blob/main/chandrababu_naidu.jpg?raw=true',
         party: 'Telugu Desam Party (TDP)',
         details: '13th Chief Minister of Andhra Pradesh since 12 June 2024. Previously served as Chief Minister from 1995-2004.'
     },
     {
         name: 'Pawan Kalyan',
-        photo: 'images/pawan_kalyan.jpg',
+        photo: 'https://github.com/krishna3427/evote/blob/main/pawan_kalyan.jpg?raw=true',
         party: 'Janasena Party',
         details: '10th Deputy Chief Minister of Andhra Pradesh since 12 June 2024. President of the Janasena Party.'
     }
 ];
+
 
 const votes = {};
 
